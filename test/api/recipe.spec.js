@@ -80,11 +80,11 @@ describe('Recipe Endpoint', function () {
         .expect(200)
         .expect((res) => {
           const recipe = res.body[0];
-          return expect(recipe.name).to.contain('Chicone');
+          return expect(recipe.name).to.contain('Chicken');
         });
     });
 
-    it('Get api/recipe?ingredients=lemon to contain recipe with lemon as ingredient', () => {
+    it("Get api/recipe?ingredients=lemon to contain recipe with lemon as ingredient", () => {
       return agent()
         .get('/api/recipes?ingredients=lemon')
         .expect(200)
