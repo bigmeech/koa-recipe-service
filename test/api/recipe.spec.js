@@ -80,7 +80,7 @@ describe('Recipe Endpoint', function () {
         .expect(200)
         .expect((res) => {
           const recipe = res.body[0];
-          return expect(recipe.name).to.contain('Chicken');
+          return expect(recipe.name).to.contain('Chicone');
         });
     });
 
