@@ -84,7 +84,7 @@ describe('Recipe Endpoint', function () {
         });
     });
 
-    it('Get api/recipe?ingredients=lemon to contain recipe with lemon as ingredient', () => {
+    it("Get api/recipe?ingredients=lemon to contain recipe with lemon as ingredient", () => {
       return agent()
         .get('/api/recipes?ingredients=lemon')
         .expect(200)
